@@ -1,0 +1,31 @@
+{
+    name: "starter-package-js",
+    version: "0.0.1",
+    description: "module description",
+    author: "Romain Prignon <pro.rprignon@gmail.com>",
+    repository: "https://github.com/romainPrignon/starter-package-js.git",
+    license: "MIT",
+    main: "lib/main.js",
+    engines: {
+        node: ">=4.2.1"
+    },
+    scripts: {
+        test: "npm run babel-node test/ || true", //TODO
+        babel-node: "babel-node --experimental", //TODO
+        check: "eslint lib/", //TODO
+        transpile: "babel lib/ --out-dir dist/", //TODO
+        watch: "chokidar-cmd -c 'npm run check' -t src/", //TODO
+        precommit: "npm run check", //TODO
+        installhooks: "cp scripts/git_hooks/pre-commit .git/hooks/pre-commit", //TODO
+        release-patch: "git checkout master && npm version patch && git push origin master --tags", //TODO
+        release-minor: "git checkout master && npm version minor && git push origin master --tags", //TODO
+        release-major: "git checkout master && npm version major && git push origin master --tags" //TODO
+    },
+    dependencies: {
+    },
+    devDependencies: {
+        babel: "latest",
+        chokidar-cmd: "latest",
+        eslint: "latest"
+    }
+}
