@@ -2,22 +2,42 @@
 
 starter for node module
 
-## Installation
+## using this repository as a starting point
 
 ```sh
 git clone https://github.com/romainprignon/starter-package-js.git
 cd starter-package-js
+```
+
+* rename all occurence of 'starter-package-js' in 'README' and 'package.json'
+* remove 'lib/prime.js' and 'test/prime.js'
+
+```sh
+rm -rf .git
+git init
+git remote add origin <repo_url>
 npm run installhooks
 npm install
 ```
-time for coffee... :)
+
+## Installation
+
+```sh
+npm install git://github.com/romainprignon/starter-package-js.git --save
+```
 
 ## Usage
 
-Acme me
+```js
+var starter = require('starter-package-js');
+...
+```
 
 ## Test
 
+```sh
+npm run test
+```
 
 ## Documentation
 
