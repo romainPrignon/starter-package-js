@@ -39,6 +39,15 @@ var starter = require('starter-package-js');
 npm run test
 ```
 
+## Debug
+
+use debugger; in your code then :
+```sh
+npm run inspect # in a new tab
+npm test -- debug
+```
+then open [node-inspector](http://127.0.0.1:8080/debug?port=5858)
+
 ## Documentation
 
 Take a look at the [documentation table of contents](doc/TOC.md).

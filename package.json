@@ -5,27 +5,36 @@
     "author": "Romain Prignon <pro.rprignon@gmail.com>",
     "repository": "https://github.com/romainPrignon/starter-package-js.git",
     "license": "MIT",
-    "main": "lib/main.js",
+    "main": "main.js",
     "engines": {
         "node": ">=4.2.1"
     },
     "scripts": {
-        "test": "npm run babel-node test/ || true", //TODO
-        "babel-node": "babel-node --experimental", //TODO
-        "check": "eslint lib/", //TODO
-        "transpile": "babel lib/ --out-dir dist/", //TODO
-        "watch": "chokidar-cmd -c 'npm run check' -t src/", //TODO
+        "test": "mocha --debug test/", //TODO: a verifier
+        "coverage": "istanbul cover npm run test", // TODO: a verifier
+        "check": "eslint lib/ test/", //TODO: a verifier
+        "transpile": "babel lib/ --out-dir dist/", //TODO: a verifier
+        "inspect": "node-inspector", //TODO: a verifier
+        "watch": "chokidar-cmd -c 'npm run check' -t lib/", //TODO: faire marcher pour lib et test et sur windows
+        "changelog": "conventional-changelog-generator", //TODO: a verifier
         "precommit": "npm run check && npm run test",
-        "installhooks": "rm -rf .git/hooks/ && cp -a scripts/git_hooks/ .git/hooks/",
-        "release-patch": "git checkout master && npm version patch && git push origin master --tags", //TODO
-        "release-minor": "git checkout master && npm version minor && git push origin master --tags", //TODO
-        "release-major": "git checkout master && npm version major && git push origin master --tags" //TODO
+        "installhooks": "rm -rf .git/hooks/ && cp -a scripts/git_hooks/ .git/hooks/", //TODO: a verifier
+        "release-patch": "git checkout master && npm version patch && git push origin master --tags", //TODO: a verifier
+        "release-minor": "git checkout master && npm version minor && git push origin master --tags", //TODO: a verifier
+        "release-major": "git checkout master && npm version major && git push origin master --tags" //TODO: a verifier
     },
     "dependencies": {
+        "config": "latest"
     },
     "devDependencies": {
         "babel": "latest",
         "chokidar-cmd": "latest",
-        "eslint": "latest"
+        "eslint": "latest",
+        "node-inspector": "latest",
+        "conventional-changelog-generator": "latest",
+        "istanbul": "latest",
+        "mocha": "latest",
+        "chai": "latest",
+        "sinon": "latest"
     }
 }
