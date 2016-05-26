@@ -10,7 +10,7 @@ cd starter-package-js
 ```
 
 * rename all occurence of 'starter-package-js' in 'README' and 'package.json'
-* remove 'lib/prime.js' and 'test/prime.js'
+* remove 'src/prime.js' and 'test/prime.js'
 
 ```sh
 rm -rf .git
