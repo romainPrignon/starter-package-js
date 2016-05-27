@@ -1,39 +1,44 @@
 {
   "name": "starter-package-js",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "module description",
   "author": "Romain Prignon <pro.rprignon@gmail.com>",
-  "repository": "https://github.com/romainPrignon/starter-package-js.git",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romainPrignon/starter-package-js.git"
+  },
   "main": "main.js",
   "engines": {
-    "node": ">=4.2.1"
+    "node": ">=4.x",
+    "npm": ">= 2.x"
   },
   "scripts": {
-    "test": "mocha --debug test/",
-    "coverage": "istanbul cover npm run test",
-    "lint": "eslint lib/ test/",
-    "transpile": "babel lib/ --out-dir dist/",
+    "clean": "npm cache clean && rimraf -- node_modules coverage",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog:lint": "conventional-changelog-lint -f || true",
+    "coverage": "istanbul cover jasmine",
     "inspect": "node-inspector",
-    "watch": "chokidar-cmd -c 'npm run lint' -t lib/",
-    "changelog": "conventional-changelog-generator",
-    "precommit": "npm run check && npm run test",
-    "installhooks": "rm -rf .git/hooks/ && cp -a scripts/git_hooks/ .git/hooks/",
-    "release-patch": "git checkout master && npm version patch && git push origin master --tags",
-    "release-minor": "git checkout master && npm version minor && git push origin master --tags",
-    "release-major": "git checkout master && npm version major && git push origin master --tags"
+    "lint": "eslint src/ spec/",
+    "precommit": "npm run lint && npm run test",
+    "release": "release-it",
+    "test": "jasmine",
+    "test:debug": "node debug ./node_modules/.bin/jasmine",
+    "test:watch": "chokidar '**/*.js' -c 'npm run test'"
   },
   "dependencies": {
     "config": "latest"
   },
   "devDependencies": {
     "chokidar-cli": "latest",
+    "conventional-changelog-cli": "latest",
+    "conventional-changelog-lint": "latest",
     "eslint": "latest",
-    "node-inspector": "latest",
-    "conventional-changelog-generator": "latest",
+    "husky": "latest",
     "istanbul": "latest",
-    "mocha": "latest",
-    "chai": "latest",
-    "sinon": "latest"
+    "jasmine": "latest",
+    "node-inspector": "latest",
+    "release-it": "latest",
+    "rimraf": "latest"
   }
 }
