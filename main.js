@@ -1,7 +1,5 @@
-'use strict';
+import {Prime} from './src/prime.js'
 
-var prime = require('./src/prime.js');
-
-module.exports = {
-  prime: prime
-};
+export {
+  Prime
+}

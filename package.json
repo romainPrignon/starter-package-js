@@ -8,13 +8,15 @@
     "type": "git",
     "url": "git+https://github.com/romainPrignon/starter-package-js.git"
   },
-  "main": "main.js",
+  "main": "dist/main.js",
   "engines": {
     "node": ">=4.x",
     "npm": ">= 2.x"
   },
   "scripts": {
-    "clean": "npm cache clean && rimraf -- node_modules coverage",
+    "build": "npm run clean && babel main.js -d dist",
+    "clean:all": "rimraf -- dist coverage node_modules",
+    "clean": "rimraf -- dist",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "changelog:lint": "conventional-changelog-lint -f || true",
     "coverage": "istanbul cover jasmine",
@@ -22,7 +24,7 @@
     "lint": "eslint src/ spec/",
     "precommit": "npm run lint && npm run test",
     "release": "release-it",
-    "test": "jasmine",
+    "test": "babel-node spec/support/run.js",
     "test:debug": "node debug ./node_modules/.bin/jasmine",
     "test:watch": "chokidar '**/*.js' -c 'npm run test'"
   },
@@ -30,6 +32,10 @@
     "config": "latest"
   },
   "devDependencies": {
+    "babel-cli": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-es2017": "latest",
+    "babel-register": "latest",
     "chokidar-cli": "latest",
     "conventional-changelog-cli": "latest",
     "conventional-changelog-lint": "latest",

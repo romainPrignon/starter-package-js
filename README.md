@@ -74,6 +74,8 @@ Take a look at the [documentation table of contents](doc/TOC.md).
 The code is available under the [MIT license](LICENSE.md).
 
 ## Todo
+* [ ] build all es6 file (main and src)
 * [ ] changelog in release
+* [ ] config based on env
 * [ ] github release (optionnal)
 
