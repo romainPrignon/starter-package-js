@@ -9,8 +9,8 @@
     "commitMessage": "%s",
     "tagName": "%s",
     "tagAnnotation": "%s",
-    "buildCommand": "",
-    "changelogCommand": "npm run build && npm run changelog",
+    "buildCommand": "npm run build && npm run changelog",
+    "changelogCommand": "",
     "requireCleanWorkingDir": false,
     "src": {
         "pushRepo": null,
