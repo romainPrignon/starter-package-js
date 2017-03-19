@@ -1,10 +1,15 @@
-<a name="1.2.1"></a>
-## [1.2.1](https://github.com/romainPrignon/starter-package-js/compare/1.2.0...v1.2.1) (2017-03-19)
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/romainPrignon/starter-package-js/compare/1.2.0...v2.0.0) (2017-03-19)
 
 
 ### Bug Fixes
 
 * add changelog in release ([d32668b](https://github.com/romainPrignon/starter-package-js/commit/d32668b))
+
+
+### Features
+
+* add dist folder ([f87476b](https://github.com/romainPrignon/starter-package-js/commit/f87476b))
 
 
 
