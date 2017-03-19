@@ -1,6 +1,13 @@
 {
   "presets": [
-    "es2015",
-    "es2017"
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"],
+          "node": 4
+        }
+      }
+    ]
   ]
 }

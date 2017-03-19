@@ -10,7 +10,7 @@
     "tagName": "%s",
     "tagAnnotation": "%s",
     "buildCommand": "",
-    "changelogCommand": "npm run changelog",
+    "changelogCommand": "npm run build && npm run changelog",
     "requireCleanWorkingDir": false,
     "src": {
         "pushRepo": null,

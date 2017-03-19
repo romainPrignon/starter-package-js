@@ -22,7 +22,7 @@
     "coverage": "istanbul cover jasmine",
     "inspect": "node-inspector",
     "lint": "eslint src/ spec/",
-    "precommit": "npm run lint && npm run test",
+    "precommit": "npm run lint && npm run test && npm run build",
     "release": "release-it",
     "test": "babel-node spec/support/run.js",
     "test:debug": "node debug ./node_modules/.bin/jasmine",
@@ -33,8 +33,7 @@
   },
   "devDependencies": {
     "babel-cli": "latest",
-    "babel-preset-es2015": "latest",
-    "babel-preset-es2017": "latest",
+    "babel-preset-env": "latest",
     "babel-register": "latest",
     "chokidar-cli": "latest",
     "conventional-changelog-cli": "latest",
