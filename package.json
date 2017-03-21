@@ -22,7 +22,7 @@
     "coverage": "nyc npm test",
     "inspect": "node-inspector",
     "lint": "eslint src/ spec/",
-    "precommit": "npm run lint && npm run test && npm run build",
+    "precommit": "npm run lint && npm run test",
     "release": "release-it",
     "test": "babel-node spec/support/run.js",
     "test:debug": "babel-node debug spec/support/run.js",
