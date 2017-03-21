@@ -9,17 +9,14 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _config = require('config');
 
-var _config2 = _interopRequireDefault(_config);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Prime = exports.Prime = function () {
   function Prime(divisor) {
     _classCallCheck(this, Prime);
 
-    this.divisor = divisor || _config2.default.get('prime.divisor');
+    this.divisor = divisor || _config.prime.divisor;
+    console.log(_config.prime.divisor);
   }
 
   _createClass(Prime, [{
@@ -59,3 +56,4 @@ var Prime = exports.Prime = function () {
 
   return Prime;
 }();
+new Prime()

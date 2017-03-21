@@ -1,8 +1,8 @@
-import config from 'config'
+import {prime} from 'config'
 
 export class Prime {
   constructor(divisor) {
-    this.divisor = divisor || config.get('prime.divisor')
+    this.divisor = divisor || prime.divisor
   }
 
   isPrime(n) {

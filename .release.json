@@ -9,7 +9,7 @@
     "commitMessage": "%s",
     "tagName": "%s",
     "tagAnnotation": "%s",
-    "buildCommand": "npm run build && npm run changelog",
+    "buildCommand": "npm run changelog",
     "changelogCommand": "",
     "requireCleanWorkingDir": false,
     "src": {
