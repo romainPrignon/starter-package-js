@@ -75,6 +75,5 @@ The code is available under the [MIT license](LICENSE.md).
 
 ## Todo
 * [ ] eslint
-* [ ] config based on env
 * [ ] github release (optionnal)
 

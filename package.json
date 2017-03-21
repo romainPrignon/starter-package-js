@@ -29,10 +29,13 @@
     "test:watch": "chokidar '**/*.js' -c 'npm run test'"
   },
   "dependencies": {
-    "config": "latest"
+    "config": "latest",
+    "lodash": "latest"
   },
   "devDependencies": {
     "babel-cli": "latest",
+    "babel-eslint": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
     "babel-preset-env": "latest",
     "babel-register": "latest",
     "chokidar-cli": "latest",

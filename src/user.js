@@ -1,29 +1,27 @@
-const users = [
-  {
-    name: 'Martin',
-    age: 14,
-    orders: [
-      {name: 'ham', price: 2, quantity: 2},
-      {name: 'eggs', price: 1, quantity: 6},
-      {name: 'bacon', price: 5, quantity: 1},
-    ]
-  },
-  {
-    name: 'Elizabeth',
-    age: 36,
-    hair: 'black',
-    orders: [
-      {name: 'ham', price: 2, quantity: 2},
-      {name: 'bread', price: 1, quantity: 3},
-      {name: 'apples', price: 2, quantity: 3},
-    ]
-  }
-]
+import _ from 'lodash'
 
-export const sortUserByAge = () => {
-  return users
-}
+const longComputation = async (a, b) => a + b
 
-// async stuff
+export const sortUserByAge = (users) =>
+  _(users)
+    .sortBy(user => user.age)
+    .value()
 
-// add / transform props (spread)
+export const getUserOrderTotalPrice = async (user) =>
+  _(user.orders)
+    .reduce(
+      async (u, acc) => await longComputation(acc, u.price),
+      0
+    )
+
+export const addUsersAgeCategory = (users) =>
+  _(users)
+    .map(user => {
+      const category = user.age < 50 ? 'young' : 'old'
+
+      return {
+        ...user,
+        category
+      }
+    })
+    .value()
