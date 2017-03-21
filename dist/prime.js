@@ -16,7 +16,6 @@ var Prime = exports.Prime = function () {
     _classCallCheck(this, Prime);
 
     this.divisor = divisor || _config.prime.divisor;
-    console.log(_config.prime.divisor);
   }
 
   _createClass(Prime, [{
@@ -56,4 +55,3 @@ var Prime = exports.Prime = function () {
 
   return Prime;
 }();
-new Prime()
