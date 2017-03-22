@@ -1,5 +1,15 @@
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/romainPrignon/starter-package-js/compare/3.0.0...v3.0.1) (2017-03-22)
+
+
+### Bug Fixes
+
+* we have to build at some point... ([9b9c47f](https://github.com/romainPrignon/starter-package-js/commit/9b9c47f))
+
+
+
 <a name="3.0.0"></a>
-# [3.0.0](https://github.com/romainPrignon/starter-package-js/compare/2.0.0...v3.0.0) (2017-03-21)
+# [3.0.0](https://github.com/romainPrignon/starter-package-js/compare/2.0.0...3.0.0) (2017-03-21)
 
 
 ### Bug Fixes
