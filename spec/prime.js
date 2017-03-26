@@ -1,4 +1,4 @@
-import {Prime} from '../src/prime'
+import {Prime} from 'prime'
 
 describe('(Service) Prime', () => {
 

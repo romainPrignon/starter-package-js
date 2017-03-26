@@ -1,6 +1,6 @@
 import {isEqual} from 'lodash'
 
-import {sortUserByAge, addUsersAgeCategory, getUserOrderTotalPrice} from '../src/user'
+import {sortUserByAge, addUsersAgeCategory, getUserOrderTotalPrice} from 'user'
 
 const users = [
   {

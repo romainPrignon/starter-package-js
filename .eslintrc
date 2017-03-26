@@ -9,6 +9,11 @@
   "plugins": [
     "import"
   ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
   "env": {
     "node": true,
     "jasmine": true,

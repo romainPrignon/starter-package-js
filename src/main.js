@@ -1,5 +1,5 @@
-import {Prime} from './prime'
-import {sortUserByAge} from './user'
+import {Prime} from 'prime'
+import {sortUserByAge} from 'user'
 
 export {
   Prime,

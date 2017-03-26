@@ -35,6 +35,7 @@
   "devDependencies": {
     "babel-cli": "latest",
     "babel-eslint": "latest",
+    "babel-plugin-module-resolver": "latest",
     "babel-plugin-transform-object-rest-spread": "latest",
     "babel-preset-env": "latest",
     "babel-register": "latest",
@@ -43,6 +44,7 @@
     "conventional-changelog-lint": "latest",
     "eslint": "latest",
     "eslint-config-styleguide-recommended": "latest",
+    "eslint-import-resolver-babel-module": "latest",
     "eslint-plugin-import": "latest",
     "husky": "latest",
     "istanbul": "latest",
