@@ -1,5 +1,15 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/romainPrignon/starter-package-js/compare/3.0.1...v3.1.0) (2017-03-26)
+
+
+### Features
+
+* eslint ([9a69482](https://github.com/romainPrignon/starter-package-js/commit/9a69482))
+
+
+
 <a name="3.0.1"></a>
-## [3.0.1](https://github.com/romainPrignon/starter-package-js/compare/3.0.0...v3.0.1) (2017-03-22)
+## [3.0.1](https://github.com/romainPrignon/starter-package-js/compare/3.0.0...3.0.1) (2017-03-22)
 
 
 ### Bug Fixes
