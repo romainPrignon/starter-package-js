@@ -25,14 +25,14 @@ describe('(Service) Prime', () => {
 
     it('should be a function', () => {
       expect(prime.primeFactors).toEqual(jasmine.any(Function))
-    });
+    })
 
     it('primeFactors of 2 should return []', () => {
       const results = prime.primeFactors(2)
 
       expect(results).toEqual(jasmine.any(Array))
       expect(results.length).toEqual(0)
-    });
+    })
 
     it('primeFactors of 3 should return [3]', () => {
       const results = prime.primeFactors(3)

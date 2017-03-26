@@ -42,6 +42,8 @@
     "conventional-changelog-cli": "latest",
     "conventional-changelog-lint": "latest",
     "eslint": "latest",
+    "eslint-config-styleguide-recommended": "latest",
+    "eslint-plugin-import": "latest",
     "husky": "latest",
     "istanbul": "latest",
     "jasmine": "latest",
