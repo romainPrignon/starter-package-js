@@ -1,5 +1,15 @@
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/romainPrignon/starter-package-js/compare/3.1.0...v3.2.0) (2017-03-26)
+
+
+### Features
+
+* module alias ([b44bdb6](https://github.com/romainPrignon/starter-package-js/commit/b44bdb6))
+
+
+
 <a name="3.1.0"></a>
-# [3.1.0](https://github.com/romainPrignon/starter-package-js/compare/3.0.1...v3.1.0) (2017-03-26)
+# [3.1.0](https://github.com/romainPrignon/starter-package-js/compare/3.0.1...3.1.0) (2017-03-26)
 
 
 ### Features
