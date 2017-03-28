@@ -1,3 +1,4 @@
+// @flow
 import {isEqual} from 'lodash'
 
 import {sortUserByAge, addUsersAgeCategory, getUserOrderTotalPrice} from 'user'

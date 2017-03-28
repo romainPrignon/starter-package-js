@@ -1,8 +1,10 @@
+// @flow
+
 import _ from 'lodash'
 
 const longComputation = async (a, b) => a + b
 
-export const sortUserByAge = (users) =>
+export const sortUserByAge = (users: Array<User>): Array<User> =>
   _(users)
     .sortBy(user => user.age)
     .value()
