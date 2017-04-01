@@ -2,12 +2,14 @@
   "extends": [
     "eslint:recommended",
     "plugin:import/recommended",
-    "styleguide-recommended"
+    "styleguide-recommended",
+    "plugin:flowtype/recommended"
   ],
   "parser": "babel-eslint",
   "parserOptions": {},
   "plugins": [
-    "import"
+    "import",
+    "flowtype"
   ],
   "settings": {
     "import/resolver": {

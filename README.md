@@ -47,6 +47,12 @@ npm run test
 npm run test:watch
 ```
 
+### Types
+
+```sh
+npm run flow-typed install module@version
+```
+
 ### Debug
 
 use debugger; in your code then :
