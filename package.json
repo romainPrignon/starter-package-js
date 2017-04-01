@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "config": "latest",
+    "dotenv": "latest",
     "lodash": "latest"
   },
   "devDependencies": {

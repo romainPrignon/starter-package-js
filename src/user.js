@@ -10,7 +10,7 @@ export const sortUserByAge = (users) =>
 export const getUserOrderTotalPrice = async (user) =>
   _(user.orders)
     .reduce(
-      async (u, acc) => await longComputation(acc, u.price),
+      async (acc, u) => await longComputation(acc, u.price),
       0
     )
 
