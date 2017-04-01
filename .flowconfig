@@ -1,6 +1,12 @@
 [ignore]
+.*/node_modules/.*
 .*/dist/.*
-.*/node_modules/conventional-changelog-core/.*
+
+[include]
+src/.*
 
 [libs]
-flowtype/
+.*/flow-typed/.*
+
+[options]
+module.system.node.resolve_dirname=src

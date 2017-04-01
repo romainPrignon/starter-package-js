@@ -1,9 +1,9 @@
-// @flow
+// @flow weak
 import {isEqual} from 'lodash'
 
 import {sortUserByAge, addUsersAgeCategory, getUserOrderTotalPrice} from 'user'
 
-const users = [
+const users: Array<User> = [
   {
     name: 'Elizabeth',
     age: 56,

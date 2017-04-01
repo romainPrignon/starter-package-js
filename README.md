@@ -47,6 +47,12 @@ npm run test
 npm run test:watch
 ```
 
+### Types
+
+```sh
+npm run flow-typed install module@version
+```
+
 ### Debug
 
 use debugger; in your code then :
@@ -74,6 +80,5 @@ Take a look at the [documentation table of contents](doc/TOC.md).
 The code is available under the [MIT license](LICENSE.md).
 
 ## Todo
-* [ ] flowtype
 * [ ] github release (optionnal)
 
