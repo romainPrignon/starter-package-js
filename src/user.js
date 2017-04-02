@@ -27,3 +27,12 @@ export const addUsersAgeCategory = (users: Array<User>): Array<User> =>
       }
     })
     .value()
+
+export const getUserHair = (users: Array<User>): Array<{name: string, hair: string}> =>
+  _(users)
+    .filter((user: User) => user.hair)
+    .map((user: User) => ({
+      name: user.name,
+      hair: user.hair
+    }))
+    .value()
