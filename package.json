@@ -55,7 +55,6 @@
     "husky": "latest",
     "istanbul": "latest",
     "jasmine": "latest",
-    "node-inspector": "latest",
     "nyc": "latest",
     "release-it": "latest",
     "rimraf": "latest"
