@@ -1,7 +1,7 @@
 // @flow weak
 import {isEqual} from 'lodash'
 
-import {sortUserByAge, addUsersAgeCategory, getUserOrderTotalPrice} from 'user'
+import {sortUserByAge, addUsersAgeCategory, getUserOrderTotalPrice, getUserHair} from 'user'
 
 const users: Array<User> = [
   {
@@ -102,5 +102,18 @@ describe('(Method) getUserOrderTotalPrice', async () => {
     // expect(await getUserOrderTotalPrice(users[1])).toEqual(8)
 
     done()
+  })
+})
+
+describe('(Method) getUserHair', () => {
+  it('should be a function', () => {
+    expect(getUserHair).toEqual(jasmine.any(Function))
+  })
+
+  it('should return user oder total price', () => {
+    expect(getUserHair(users)).toEqual([{
+      name: 'Elizabeth',
+      hair: 'black'
+    }])
   })
 })
